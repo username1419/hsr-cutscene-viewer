@@ -7,7 +7,8 @@ Instructions/How to use:
 1. Download this repo's source code & **full** build of ffmpeg
 2. Extract the repo
 3. Copy **all** ffmpeg binaries into the extracted repo folder
-4. Open start.bat
+4. Open setup.bat
+5. Open start.bat
 5. Navigate to [your honkai star rail install directory]/StarRail_Data/StreamingAssets/Video/Windows/
 6. Select your desired cutscene
 7. Select the language you want the cutscene to be played at
