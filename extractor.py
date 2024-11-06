@@ -45,6 +45,9 @@ with open(file, 'rb') as tempfile:
 						.absolute()
 						).replace('\\', '/')
 		
+with open('./HSR_folderpath.txt', 'w+') as folderpath:
+	folderpath.write('/'.join(file.split('\\')[:-1]))
+	
 audiopaths = {}
 langdict = {"CN" : "00", "EN" : "01", "JP" : "02", "KR" : "03"}
 audio_ext = '.' + filenames[1].split('.')[-1]
@@ -95,5 +98,3 @@ try:
 except IndexError:
 	system(f'del /Q .\\{filename}.mp4')
 	
-with open('./HSR_folderpath.txt', 'w+') as folderpath:
-	folderpath.write('/'.join(file.split('\\')[:-1]))
