@@ -2,4 +2,4 @@ echo off
 set iskeepvideo= %1
 cls
 echo on
-py extractor.py %1
+.\.venv\Scripts\python.exe extractor.py %1
